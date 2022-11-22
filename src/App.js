@@ -4,6 +4,7 @@ import "./App.css";
 function App() {
   const [items, setItems] = useState([]);
   const [query, setQuery] = useState("");
+  //
   const inputRef = useRef();
 
   const filteredItem = useMemo(() => {
@@ -36,7 +37,7 @@ function App() {
           <button type="submit">add</button>
         </form>
         <div>
-          <p>Items : </p>
+          Items :
           {filteredItem.map((item) => (
             <div>{item}</div>
           ))}
